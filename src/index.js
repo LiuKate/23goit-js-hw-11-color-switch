@@ -19,7 +19,7 @@ const bodyRef = document.querySelector('body');
 startBtn.addEventListener('click', onStart);
 stopBtn.addEventListener('click', onStop);
 
-let colorChangeByTime = '';
+let colorChangeByTime = null;
 
 function colorGenerator() {
     bodyRef.style.backgroundColor = colors[randomIntegerFromInterval(0, colors.length - 1)]
